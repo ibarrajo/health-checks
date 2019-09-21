@@ -45,7 +45,7 @@ class HealthCheckerTest extends TestCase
     public function throws_execption_if_no_health_checks_is_setup()
     {
         // Given
-        $checkList = new CheckList();
+        $checkList = new CheckList([]);
         $checker = new HealthChecker($checkList);
 
         // When

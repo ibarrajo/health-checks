@@ -23,7 +23,7 @@ class HealthChecker
 
     public function run()
     {
-        if ($this->list->count() == 0) {
+        if ($this->list->isEmpty()) {
             throw new NoHealthChecksSetupException("No health check is setup!");
         }
 
@@ -40,7 +40,7 @@ class HealthChecker
         if ($this->list->isEmpty()) {
             throw new NoHealthChecksSetupException("No health check is setup!");
         }
-        
+
         $output = [];
         /** @var HealthCheck $check */
         foreach ($this->list as $check) {

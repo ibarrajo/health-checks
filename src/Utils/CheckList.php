@@ -20,7 +20,7 @@ class CheckList extends TypedCollection
                 return new $check[0](...array_slice($check, 1));
             }
         };
-        
+
         parent::__construct(array_map($cast, $checks));
     }
 
