@@ -16,7 +16,7 @@
   "require": {
     "php": ">=7.0.0",
     "illuminate/support": "~6|~5",
-    "vistik/typed-collections": "*"
+    "phpsafari/typed-collections": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "*",
